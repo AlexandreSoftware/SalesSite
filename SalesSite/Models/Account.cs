@@ -4,6 +4,7 @@ namespace SalesSite.Models
 {
     public class Account
     {
+        public int id { get; set; }
         [Required(ErrorMessage = "{0} is required")]
         public string Name { get; internal set; }
         [Required(ErrorMessage = "{0} is required")]
