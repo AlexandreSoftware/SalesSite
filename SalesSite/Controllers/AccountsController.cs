@@ -22,9 +22,16 @@ namespace SalesSite.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Register()
+        public IActionResult Register(Account acc)
         {
             return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Login(Account acc)
+        {
+
+            return RedirectToAction("View");
         }
     }
 }

@@ -39,8 +39,8 @@
                 </div>
                 
                 <form class="form-inline my-2 my-lg-0">
-                    <button type="button" class="btn btn-warning btn-outline-danger nav-link text-white " asp-area="" asp-controller="Account" asp-action="Login">Login</button>
-                    <a class="nav-link text-white" asp-area="" asp-controller="Account" asp-action="Create">Register</a>
+                    <button type="button" class="btn btn-warning btn-outline-danger nav-link text-white " onclick="location.href='@Url.Action("Login", "Accounts")'">Login</button>
+                    <a class="nav-link text-white" asp-area="" asp-controller="Accounts" asp-action="Register">Register</a>
                 </form>
             </div>
         </nav>
