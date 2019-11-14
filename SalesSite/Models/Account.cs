@@ -15,9 +15,8 @@ namespace SalesSite.Models
         [DataType(DataType.EmailAddress,ErrorMessage ="Email Is Required")]
 
         public string Email;
-        [Required(ErrorMessage = "{0} is required")]
-        [Range(7, 15, ErrorMessage = "{0} must be from {1} to {2} characters")]
         [Required(AllowEmptyStrings =false,ErrorMessage = "{0} is required")]
+        [Range(7, 15, ErrorMessage = "{0} must be from {1} to {2} characters")]
         public string Password { get; set; }
     }
 }
