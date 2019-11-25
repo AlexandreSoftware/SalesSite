@@ -14,6 +14,7 @@ namespace SalesSite.Controllers
         private readonly SalesSiteContext _context;
         public IActionResult Login()
         {
+            
             return View();
         }
         public IActionResult Register()
