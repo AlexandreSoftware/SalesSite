@@ -5,7 +5,7 @@ namespace SalesSite.Controllers
     {
         [Route("error/404")]
         public IActionResult error404(){
-            return View();
+            return View(404);
         }
     }
 }
